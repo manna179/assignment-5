@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <!-- <link rel="stylesheet" href="" id="Blog"> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav-section class="lg:flex justify-between p-12 items-center  lg:bg-[#f9f7f3] w-full text-center">
+            <!-- one -->
+            <div>
+               <button class="btn bg-[#b4f461] hover:bg-[#b4f461] w-20  font-bold"><a href="index.html">home</a></button>
+           </div>
+           <!-- two -->
+           <div class="">
+               <div class="flex items-center gap-x-2 space-y-4 justify-center">
+                   <img src="images/logo.png" alt="">
+                   <h3 class="font-bold">Donate Bangladesh</h3>
+               </div>
+           </div>
+           <!-- three -->
+            <div class="">
+               <div class="flex gap-x-2  items-center justify-center">
+                   <img class="w-5 h-5" src="images/coin.png" alt="">
+                   <h3 id="my-account" class="font-bold">5500</h3>
+                   <h3 class="font-bold">BDT</h3>
+               </div>
+            </div>
+          </nav-section>
+    </header>
+
+    <main>
+        <div >
+            <h1 class="text-4xl mb-6 font-bold mx-4">Important FAQ ?</h1>
+        </div>
+          <div class="collapse collapse-arrow border rounded-md">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is document object model (DOM)?</div>
+            <div class="collapse-content">
+              <p>Document object model is a object model like tree. It's working parent node to child nodes.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border rounded-md">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p><span class="font-medium">we can select an element from dom by</span> <br>
+            1. querySelector
+        <br>
+        2. querySelectorAll <br>
+        3. getElementsByClassName
+        <br>
+        4. getElementById
+        <br>
+        5. getElementByTagName
+    </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border rounded-md">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">what is event delegation in the context of DOM, and why it is useful?</div>
+            <div class="collapse-content">
+              <p>Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border rounded-md">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p><span class="font-medium">The following are the most common and practical ways you might want to manipulate the Element object:</span> <br>
+
+               1. Change the Content of an Element <br>
+               2. Manipulate the Class Attribute <br>
+               3. Setting CSS Styles Using JavaScript <br>
+               4. Create, Add, and Remove Elements <br> 
+               5. Insert Element at a Specific Position <br>
+               6. Manipulating Element Attributes <br>
+               7. Manipulating Data Attributes</p>
+            </div>
+          </div>
+          
+
+          
+          
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>

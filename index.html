@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = 'white'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-5</title>
+    <style>
+      .active-button {
+        background-color:#b4f461  !important;
+        padding: 6px 10px;
+        border-radius: 4px ;
+
+
+      }
+      .default-button {
+        background-color:#f9f7f3 !important;
+        padding:6px 12px;
+        border-radius: 4px ;
+        margin-left: 4px;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <header class="sticky top-0 z-50 backdrop-blur-lg">
+       <nav-section class="lg:flex justify-between p-12 items-center  lg:bg-[#f9f7f3] w-full text-center">
+         <!-- one -->
+         <div>
+            <button class="btn bg-[#b4f461] hover:bg-[#b4f461] w-20  font-bold"><a href="blog-page.html">Blog</a></button>
+        </div>
+        <!-- two -->
+        <div class="">
+            <div class="flex items-center gap-x-2 space-y-4 justify-center">
+                <img src="images/logo.png" alt="">
+                <h3 class="font-bold">Donate Bangladesh</h3>
+            </div>
+        </div>
+        <!-- three -->
+         <div class="">
+            <div class="flex gap-x-2  items-center justify-center">
+                <img class="w-5 h-5" src="images/coin.png" alt="">
+                <h3 id="my-account" class="font-bold">5500</h3>
+                <h3 class="font-bold">BDT</h3>
+            </div>
+         </div>
+       </nav-section>
+       <div class="w-full ">
+        <div class="lg:mt-12 text-center">
+            <button id="donation-btn" class="active-button ">Donation</button>
+            <button id="history-btn" class="default-button ">History</button> 
+        </div>
+           
+        </div>
+       </div>
+    </header>
+    <!-- header closed -->
+     <!-- main start -->
+
+    <main id="main-section" class="w-11/12 mx-auto mt-12 space-y-4 ">
+        <!-- cart-one -->
+        <div class="card lg:card-side bg-base-100 shadow-xl items-center border">
+            <figure>
+              <img class="w-full"
+                src="images/noakhali.png"
+                alt="Album" />
+            </figure>
+            <div class="card-body w-full">
+                <div class="flex gap-x-2 items-center border w-32 p-2 rounded-lg bg-[#f3f3f3]">
+                    <img class="w-5 h-5" src="images/coin.png" alt="">
+                    <h3 id="noakhali-account" class="font-bold">3500</h3>
+                    <h3 class="font-bold">BDT</h3>
+                </div>
+              <h2 class="card-title font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+              <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+              <input id="donated-amount" class="bg-transparent border h-12 rounded-lg pl-4" type="number" placeholder="Write Donation Amount">
+              <div class="card-actions justify-center">
+                <button id="noakhali-donation" class="btn  bg-[#b4f461] hover:bg-[#b4f461] w-full  font-bold">Donate Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- cart two -->
+          <div class="card lg:card-side bg-base-100 shadow-xl items-center border">
+            <figure>
+              <img class="w-full"
+                src="images/feni.png"
+                alt="Album" />
+            </figure>
+            <div class="card-body w-full">
+                <div class="flex gap-x-2 items-center border w-32 p-2 rounded-lg bg-[#f3f3f3]">
+                    <img class="w-5 h-5" src="images/coin.png" alt="">
+                    <h3 id="feni-account" class="font-bold">2500</h3>
+                    <h3 class="font-bold">BDT</h3>
+                </div>
+              <h2 class="card-title font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
+              <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+              <input id="donate-feni-account" class="bg-transparent border h-12 rounded-lg pl-4" type="number" placeholder="Write Donation Amount">
+              <div class="card-actions justify-center">
+                <button id="donate-feni" class="btn bg-[#b4f461] hover:bg-[#b4f461] w-full  font-bold">Donate Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- cart three -->
+          <div class="card lg:card-side bg-base-100 shadow-xl items-center border">
+            <figure>
+              <img class="w-full"
+                src="images/quota-protest.png"
+                alt="Album" />
+            </figure>
+            <div class="card-body w-full">
+                <div class="flex gap-x-2 items-center border w-32 p-2 rounded-lg bg-[#f3f3f3]">
+                    <img class="w-5 h-5" src="images/coin.png" alt="">
+                    <h3 id="quota-account" class="font-bold">5500</h3>
+                    <h3 class="font-bold">BDT</h3>
+                </div>
+              <h2 class="font-bold card-title">Aid for Injured in the Quota Movement</h2>
+              
+              <input id="donate-for-quota" class=" mt-16 bg-transparent border h-12 rounded-lg pl-4" type="text" placeholder="Write Donation Amount">
+              <div class="card-actions justify-center">
+                <button id="donate-quota" class="btn bg-[#b4f461] hover:bg-[#b4f461] w-full  font-bold">Donate Now</button>
+              </div>
+            </div>
+          </div>
+    </main>
+
+
+    <footer>
+      <div id="history-section" class="border hidden w-11/12 mx-auto p-4">
+        
+      </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>
